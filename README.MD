@@ -20,6 +20,11 @@ Start NodeJS server at http://localhost:3000
     npm start
 ```
 
+For Nodemon usage
+``` shell
+    nodemon ./bin/www
+```
+
 ### Technologies
 ###### Back-end
 NodeJS, Express, Express-Session, Nodemon, Express.js view engine for handlebars.js
