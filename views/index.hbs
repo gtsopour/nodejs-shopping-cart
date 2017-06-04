@@ -1,0 +1,19 @@
+<h1>{{title}}</h1>
+<p>Welcome to the {{title}}</p>
+
+{{# each products }}
+  <div class="row">
+    <div class="col-md-12">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>{{ this.title }}</h3>
+            <p class="description">{{{this.description}}}</p>
+            <div class="clearfix">
+            <div class="price pull-left"><i class="fa fa-tag" aria-hidden="true"></i> {{ this.price }} CHF</div>
+              <a href="/add/{{ this.id }}" class="btn btn-default pull-right" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/each}}

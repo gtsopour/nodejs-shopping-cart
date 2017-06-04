@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-xs-4">
+        <div class="pull-left">
+        <a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        </div>
+    </div>
+    <div class="col-xs-8">
+        <div class="dropdown pull-right">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+                {{# if session.cart.totalItems }}
+                <span>({{session.cart.totalItems}})</span>
+                {{/if}}
+            </a>
+            {{# if session.cart.totalItems }}
+            <div class="dropdown-menu">
+                <div class="cart">
+                    {{# each session.cart.items }}
+                    <div class="row">
+                        <div class="col-xs-4">
+                            {{ this.item.title }}
+                        </div>
+                        <div class="col-xs-4 text-right">
+                            <span class="badge">{{ this.quantity }}</span>
+                        </div>
+                        <div class="col-xs-4 text-right">
+                            {{ this.price }} CHF
+                        </div>
+                    </div>
+                    {{/each}}
+                    <div class="row">
+                        <div class="text-right">
+                            <div class="totalPrice">Total: {{ session.cart.totalPrice }} CHF</div>
+                            <a href="/cart/" class="btn btn-success">Procceed</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+</div>
