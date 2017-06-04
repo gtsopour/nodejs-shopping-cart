@@ -1,4 +1,4 @@
-# NodeJS Shopping Cart - NodeJS, Express, Express handlebars (hbs)
+# NodeJS Shopping Cart - NodeJS Shopping Cart - NodeJS, Express, Express-Session, Express handlebars (hbs)
 
 ### Run locally on your machine
 You need to have installed Node and NPM.
