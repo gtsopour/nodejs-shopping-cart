@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "George Tsopouridis",
   "email": "gtsopour@gmail.com",
-  "private": true,
+  "private": false,
   "scripts": {
     "start": "node ./bin/www"
   },
