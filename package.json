@@ -14,7 +14,7 @@
     "express": "~4.15.2",
     "express-session": "^1.15.3",
     "hbs": "~4.0.1",
-    "morgan": "~1.8.1",
+    "morgan": "~1.9.1",
     "serve-favicon": "~2.4.2"
   },
   "devDependencies": {
