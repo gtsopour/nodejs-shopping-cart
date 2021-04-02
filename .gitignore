@@ -9,5 +9,3 @@
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
-
-package-lock.json
