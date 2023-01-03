@@ -1,26 +1,116 @@
 [
   {
     "id": 1,
-    "title": "Apples",
-    "description": "Apples are <span class=\"label label-info\">25 CHF each</span>",
+    "title": "Elma",
+    "image":"elma.png",
+    "description": "Onat <span class=\"label label-info\">25 TL each</span>",
     "price": 25
   },
   {
     "id": 2,
-    "title": "Oranges",
-    "description": "Oranges are <span class=\"label label-info\">30 CHF each</span>",
+    "title": "Portakal",
+    "image":"oranges.png",
+    "description": "Protakal <span class=\"label label-info\">30 TL each</span>",
     "price": 30
   },
   {
     "id": 3,
-    "title": "Garlic",
-    "description": "Garlic are <span class=\"label label-info\">15 CHF each</span>",
+    "title": "Sarımsak",
+    "image":"sogan.png",
+    "description": "Garlic are <span class=\"label label-info\">15 TL each</span>",
     "price": 15
   },
   {
     "id": 4,
     "title": "Papayas",
-    "description": "Papayas are <span class=\"label label-info\">50 CHF each</span>, but are <span class=\"label label-warning\">available as 3 for the price of 2</span>",
+    "image":"Papaya.png",
+    "description": "Papayas are <span class=\"label label-info\">50 TL each</span>, but are <span class=\"label label-warning\">available as 3 for the price of 2</span>",
     "price": 100
+  },
+
+  {
+    "id": 5,
+    "title": "Bilgisayar",
+    "image":"pc.png",
+    "description": "Bu Bilgisyar <span class=\"label label-info\">25 000 TL</span>",
+    "price": 25000
+  },
+  {
+    "id": 6,
+    "title": "Tablet",
+    "image":"tablet.png",
+    "description": "Tablet <span class=\"label label-info\">2 500 TL</span>",
+    "price": 2500
+  },
+  {
+    "id": 7,
+    "title": "Telefon",
+    "image":"phone.png",
+    "description": "Iphone 14 sadece <span class=\"label label-info\">48 000 TL</span>",
+    "price": 48000
+  },
+  {
+    "id": 8,
+    "title": "Televizyon",
+    "image":"tv.png",
+    "description": "QLED Televizyonlar<span class=\"label label-info\">20 000'Tlden</span>, but are <span class=\"label label-warning\">10 000 TL'ye düştü </span>",
+    "price": 10000
+  },
+  {
+    "id": 9,
+    "title": "Şampuan",
+    "image":"shampo.png",
+    "description": "Şampuan<span class=\"label label-info\">40 TL</span>",
+    "price": 40
+  },
+  {
+    "id": 10,
+    "title": "Parfüm",
+    "image":"parfume.png",
+    "description": "Parfüm <span class=\"label label-info\">250 TL</span>",
+    "price": 250
+  },
+  {
+    "id": 11,
+    "title": "Deodorant",
+    "image":"deodorant.png",
+    "description": "Deodorant <span class=\"label label-info\">48 TL</span>",
+    "price": 48
+  },
+  {
+    "id": 12,
+    "title": "Diş Fırçası",
+    "image":"diş.png",
+    "description": "Diş Fırçası<span class=\"label label-info\">40'Tlden</span>, but are <span class=\"label label-warning\">10 TL'ye düştü </span>",
+    "price": 10
+  },
+  {
+    "id": 13,
+    "title": "Koşu Bandı",
+    "image":"koşu.png",
+    "description": "Koşu bandı <span class=\"label label-info\">25 000 TL</span>",
+    "price": 17000
+  },
+  {
+    "id": 14,
+    "title": "Dumbell",
+    "image":"dumbell.jpg",
+    "description": "Dumbell <span class=\"label label-info\">2 500 TL</span>",
+    "price": 350
+  },
+  {
+    "id": 15,
+    "title": "Bisiklet",
+    "image":"bisiklet.png",
+    "description": "Bisiklet <span class=\"label label-info\">48 000 TL</span>",
+    "price": 8500
+  },
+  {
+    "id": 16,
+    "title": "Ayakkabı",
+    "image":"ayakkabı.png",
+    "description": "Spor Ayakkabı<span class=\"label label-info\">2 000'Tlden</span>, but are <span class=\"label label-warning\">1000 TL'ye düştü </span>",
+    "price": 1000
   }
+  
 ]

@@ -1,0 +1,22 @@
+
+<p style="color: aliceblue; font-size:100%">Ucuz Al'a Hoşgeldiniz... </p>
+<p>Merhaba {{session.username.username}}</p>
+
+{{# each products }}
+  <div class="row"  >
+    <div class="col-md-12" >
+      <div class="thumbnail" >
+        <div class="caption" style="background-color: pink;">
+          <h3>{{ this.title }}</h3>
+            <img  src={{this.image}} alt={{ this.title }} width="400" height="200">
+            <p class="description">{{{this.description}}}</p>
+            <div class="clearfix">
+            <div class="price pull-left"><i class="fa fa-tag" aria-hidden="true"></i> {{ this.price }} TL</div>
+              <a href="/add/{{ this.id }}" class="btn btn-default pull-right" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Sepete Ekle</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/each}}
+
