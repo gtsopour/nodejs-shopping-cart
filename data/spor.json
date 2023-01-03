@@ -1,0 +1,31 @@
+[
+    {
+      "id": 13,
+      "title": "Koşu Bandı",
+      "image":"koşu.png",
+      "description": "Koşu bandı <span class=\"label label-info\">25 000 TL</span>",
+      "price": 17000
+    },
+    {
+      "id": 14,
+      "title": "Dumbell",
+      "image":"dumbell.jpg",
+      "description": "Dumbell <span class=\"label label-info\">2 500 TL</span>",
+      "price": 350
+    },
+    {
+      "id": 15,
+      "title": "Bisiklet",
+      "image":"bisiklet.png",
+      "description": "Bisiklet <span class=\"label label-info\">48 000 TL</span>",
+      "price": 8500
+    },
+    {
+      "id": 16,
+      "title": "Ayakkabı",
+      "image":"ayakkabı.png",
+      "description": "Spor Ayakkabı<span class=\"label label-info\">2 000'Tlden</span>, but are <span class=\"label label-warning\">1000 TL'ye düştü </span>",
+      "price": 1000
+    }
+    
+ ]

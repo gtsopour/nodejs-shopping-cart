@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<title>Login</title>
+        <!-- the form awesome library is used to add icons to our form -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <!-- include the stylesheet file -->
+        <link href="/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="login">
+			
+			<h1>Üye Girişi</h1>
+			<form action="/auth" method="post">
+				<label for="username">
+					<!-- font awesome icon -->
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Username" id="username" zorunlu	>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Password" id="password" zorunlu>
+          			<a href="#">Şifremi Unuttum</a>
+        		
+				<input type="submit" value="Login">
+
+				<div >        
+          Üye Değil misin? <a href="register">Şimdi Kaydol</a>
+        		</div>
+			</form>
+		</div>
+	</body>
+</html>

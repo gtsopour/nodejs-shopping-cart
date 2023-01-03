@@ -1,0 +1,32 @@
+ [
+    {
+      "id": 5,
+      "title": "Bilgisayar",
+      "image":"pc.png",
+      "description": "Bu Bilgisyar <span class=\"label label-info\">25 000 TL</span>",
+      "price": 25000
+    },
+    {
+      "id": 6,
+      "title": "Tablet",
+      "image":"tablet.png",
+      "description": "Tablet <span class=\"label label-info\">2 500 TL</span>",
+      "price": 2500
+    },
+    {
+      "id": 7,
+      "title": "Telefon",
+      "image":"phone.png",
+      "description": "Iphone 14 sadece <span class=\"label label-info\">48 000 TL</span>",
+      "price": 48000
+    },
+    {
+      "id": 8,
+      "title": "Televizyon",
+      "image":"tv.png",
+      "description": "QLED Televizyonlar<span class=\"label label-info\">20 000'Tlden</span>, but are <span class=\"label label-warning\">10 000 TL'ye düştü </span>",
+      "price": 10000
+    }
+    
+ ]
+  

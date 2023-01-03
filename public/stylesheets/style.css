@@ -1,10 +1,30 @@
 body {
   padding: 50px;
   font: 16px 'Lato', sans-serif;
+  height: 90vh;
+  background-image: url('https://codetheweb.blog/assets/img/posts/css-advanced-background-images/mountains.jpg');
 }
 
+.logo {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 0px 0px;
+}
+
+button{
+  background-color: #3ace9d;
+}
 a {
-  color: #00B7FF;
+  color: #92d612;
+}
+
+#transparent {
+    width:auto;
+    height:auto;
+    background-color:#000000;
+    opacity:0.6;
+    filter:alpha(opacity=60);
 }
 
 * {
@@ -20,14 +40,165 @@ a {
 
 .dropdown-menu .cart .row > div {
   padding: 0 0 10px 0;
+  font-size: 100%;
 }
 
 .dropdown-menu .cart .totalPrice{
-  font-size: 120%;
+  font-size: 200%;
   font-weight: bold;
   padding: 15px 0;
 }
 
 .cart.page {
-  padding: 25px 0;
+  padding: 200PX 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.login {
+  width: 400px;
+  background-color: #ffffff;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  margin: 100px auto;
+}
+.login h1 {
+  text-align: center;
+  color: #5b6574;
+  font-size: 24px;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #dee0e4;
+}
+.login form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+.login form label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: #ffffff;
+}
+.login form input[type="password"], .login form input[type="text"] {
+  width: 310px;
+  height: 50px;
+  border: 1px solid #dee0e4;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+.login form input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+ margin-top: 20px;
+  background-color: black;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  transition: background-color 0.2s;
+}
+.login form input[type="submit"]:hover {
+background-color: black;
+  transition: background-color 0.2s;
+}
+
+.container {
+  background: white;
+  width: 540px;
+  height: 420px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 10%;
+  box-shadow: 2px 5px 20px rgba(gray, .5);
+}
+
+
+.CTA {
+  width: 80px;
+  height: 40px;
+  right: -20px;
+  bottom: 0;
+  margin-bottom: 90px;
+  position: absolute;
+  z-index: 1;
+  background: black;
+  font-size: 1em;
+  transform: rotate(-90deg);
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+
+}
+
+.leftbox {
+  float: left;
+  top: -5%;
+  left: 5%;
+  position: absolute;
+  width: 15%;
+  height: 110%;
+  background: black;
+  box-shadow: 3px 3px 10px rgba(gray, .5);
+}
+
+nav a {
+  list-style: none;
+  padding: 35px;
+  color: white;
+  font-size: 1.1em;
+  display: block;
+  transition: all .3s ease-in-out;
+}
+
+.active {
+  color: black;
+}
+
+.rightbox {
+  float: right;
+  width: 60%;
+  height: 100%;
+}
+
+
+.profile, .payment, .subscription, .privacy, .settings {
+  transition: opacity .5s ease-in;
+  position: absolute;
+  width: 70%;
+}
+
+h2 {
+  color: gray;
+  font-family: body;
+  width: 80%;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-left: 2px;
+}
+
+
+.noshow {
+  opacity: 0;
+}
+
+footer {
+  position: absolute;
+  width: 20%;
+  bottom: 0;
+  right: -20px;
+  text-align: right;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: body;
+
+  
 }

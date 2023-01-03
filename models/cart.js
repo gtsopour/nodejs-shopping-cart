@@ -13,6 +13,7 @@ module.exports = function Cart(cart) {
         this.totalItems++;
         this.totalPrice += cartItem.item.price;
     };
+    
 
     this.remove = function(id) {
         this.totalItems -= this.items[id].quantity;

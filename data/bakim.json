@@ -1,0 +1,30 @@
+[
+      {
+        "id": 9,
+        "title": "Şampuan",
+        "image":"shampo.png",
+        "description": "Şampuan<span class=\"label label-info\">40 TL</span>",
+        "price": 40
+      },
+      {
+        "id": 10,
+        "title": "Parfüm",
+        "image":"parfume.png",
+        "description": "Parfüm <span class=\"label label-info\">250 TL</span>",
+        "price": 250
+      },
+      {
+        "id": 11,
+        "title": "Deodorant",
+        "image":"deodorant.png",
+        "description": "Deodorant <span class=\"label label-info\">48 TL</span>",
+        "price": 48
+      },
+      {
+        "id": 12,
+        "title": "Diş Fırçası",
+        "image":"diş.png",
+        "description": "Diş Fırçası<span class=\"label label-info\">40'Tlden</span>, but are <span class=\"label label-warning\">10 TL'ye düştü </span>",
+        "price": 10
+      }
+  ]

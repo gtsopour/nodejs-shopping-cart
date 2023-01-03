@@ -1,13 +1,25 @@
+
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 <div class="row">
-    <div class="col-xs-4">
-        <div class="pull-left">
-        <a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-        </div>
+    <div class="col-xs-8"align="left">
+        <a href="/" style=" font-size:150%; color:aliceblue; margin : 10px" ><i class="fa fa-home" aria-hidden="true"></i> Anasayfa</a>
+        <a href="/elektronik"style=" font-size:150%; color:aliceblue;margin : 10px"><i class="fa fa-desktop" aria-hidden="true"></i> Elektronik</a>
+        <a href="/bakim"style=" font-size:150%; color:aliceblue;margin : 10px"><i class="fa fa-paint-brush" aria-hidden="true"></i> Kişisel Bakım</a>
+        <a href="/spor"style=" font-size:150%; color:aliceblue;margin : 10px"><i class="fa fa-futbol-o" aria-hidden="true"></i> Spor</a>
+        <a href="/urunler"style=" font-size:150%; color:aliceblue;margin : 10px"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Tüm ürünler</a>
+
     </div>
-    <div class="col-xs-8">
+    <div class="col-xs-20">
         <div class="dropdown pull-right">
-            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+            {{#if session.loggedin}}
+            <a href="/profile" style=" font-size:150%; color:aliceblue;margin :"><i class="fa fa-user" aria-hidden="true"></i>{{session.username.username}}</a>
+            <a href="/logout"style=" font-size:150%; color:aliceblue;margin : 10px"><i class="fa fa-sign-in" aria-hidden="true"></i> Çıkış Yap</a>
+            {{else}}
+            <a href="/login"style=" font-size:150%; color:aliceblue;margin : 10px"><i class="fa fa-sign-in" aria-hidden="true"></i> Giriş Yapın</a>
+            {{/if}}
+            <a class="dropdown-toggle"style=" font-size:150%; color:green;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Sepet
                 {{# if session.cart.totalItems }}
                 <span>({{session.cart.totalItems}})</span>
                 {{/if}}
@@ -24,14 +36,14 @@
                             <span class="badge">{{ this.quantity }}</span>
                         </div>
                         <div class="col-xs-4 text-right">
-                            {{ this.price }} CHF
+                            {{ this.price }} TL
                         </div>
                     </div>
                     {{/each}}
                     <div class="row">
                         <div class="text-right">
-                            <div class="totalPrice">Total: {{ session.cart.totalPrice }} CHF</div>
-                            <a href="/cart/" class="btn btn-success">Procceed</a>
+                            <div class="totalPrice">Total: {{ session.cart.totalPrice }} TL</div>
+                            <a href="/cart" class="btn btn-success">Sipariş Ver</a>
                         </div>
                     </div>
                 </div>

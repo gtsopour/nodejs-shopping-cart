@@ -1,0 +1,36 @@
+[
+    {
+      "id": 1,
+      "title": "Elektronik",
+      "image":"elektronik.png",
+      "url":"/elektronik",
+      "description": "Bu günlük hayatınızda kullandığınız ve ihtiyacınız olduğunu düşündüğünüz teknolojik aletleri bulabilirsinizkategoride"
+    },
+    {
+      "id": 2,
+      "title": "Kişisel Bakım",
+      "image":"kişisel.jpg",
+      "url":"/bakim",
+
+      "description": "Kişisel bakım ürünlerine gitmek için tıklayınız"
+    },
+    {
+      "id": 3,
+      "title": "Spor",
+      "image":"spor.png",
+      "url":"/spor",
+
+      "description": "Spor ve Sağlıklı yaşam ürünlerini listelemek için tıklayınız."
+
+    },
+    {
+      "id": 4,
+      "title": "Tüm ürünler",
+      "image":"capa.png",
+      "url":"/urunler",
+
+      "description": "Tüm ürünleri listelemek için tıklayınız."
+    }
+    
+ ]
+  
