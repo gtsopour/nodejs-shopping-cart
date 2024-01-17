@@ -1,0 +1,15 @@
+version: 2.1
+
+jobs:
+  semgrep:
+    docker:
+      - image: returntocorp/semgrep-agent:v1
+    steps:
+      - checkout
+      - run: semgrep-agent --config p/r2c-ci --baseline-ref HEAD^
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - semgrep
