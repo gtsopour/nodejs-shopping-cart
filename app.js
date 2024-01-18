@@ -55,4 +55,20 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+app.get('/users/:id', (req, res) => {
+ const userId = Number(req.params.id);
+ const user = users.find((user) => user.id === userId);
+ console.log(req.query)
+ if (!user) {
+ if (req.query.url) {
+ res.redirect(req.query.url);
+ } else {
+ res.redirect('https://www.example.com');
+ }
+ } else {
+ res.json(user);
+ }
+});
+
+
 module.exports = app;
