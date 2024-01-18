@@ -6,7 +6,18 @@ jobs:
       - image: returntocorp/semgrep-agent:v1
     steps:
       - checkout
-      - run: semgrep-agent --config p/r2c-ci --baseline-ref HEAD^
+      - run:
+          name: Semgrep Scan
+          command: semgrep-agent --config p/r2c-ci --baseline-ref HEAD~ --json > semgrep_output.json
+      - run:
+          name: Install Python dependencies
+          command: pip install requests
+      - run:
+          name: Post Semgrep findings as comments
+          command: python post_comments.py
+          environment:
+            GITHUB_TOKEN: $CIRCLECI_GITHUB_TOKEN
+            CIRCLE_PULL_REQUEST: $CI_PULL_REQUEST
 
 workflows:
   version: 2
