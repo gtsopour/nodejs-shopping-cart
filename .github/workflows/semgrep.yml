@@ -18,7 +18,7 @@ jobs:
        run: |
          semgrep --config p/r2c --json | jq -r '.results[] | "\(.extra_info.message) \(.path):\(.start.line)"' > issues.txt
      - name: Comment on PR
-       uses: thollander/actions-comment-pull-request@master
+       uses: thollander/actions-comment-pull-request@v2
        with:
          message: "Semgrep found some issues:\n$(cat issues.txt)"
          repo-token: ${{ secrets.GITHUB_TOKEN }}
