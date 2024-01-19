@@ -1,0 +1,24 @@
+name: Semgrep CI
+on:
+ pull_request:
+ branches:
+   - master
+jobs:
+ semgrep:
+ runs-on: ubuntu-latest
+ container:
+   image: returntocorp/semgrep:latest
+ steps:
+   - name: Checkout code
+     uses: actions/checkout@v2
+     with:
+       fetch-depth: 0
+   - name: Run Semgrep
+     run: |
+       semgrep --config p/r2c --json | jq -r '.results[] | "\(.extra_info.message) \(.path):\(.start.line)"' > issues.txt
+   - name: Comment on PR
+     uses: thollander/actions-comment-pull-request@master
+     with:
+       message: "Semgrep found some issues:\n$(cat issues.txt)"
+       repo-token: ${{ secrets.GITHUB_TOKEN }}
+
