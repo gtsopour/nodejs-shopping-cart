@@ -18,20 +18,11 @@ jobs:
           environment:
             GITHUB_TOKEN: $CIRCLECI_GITHUB_TOKEN
             CIRCLE_PULL_REQUEST: $CI_PULL_REQUEST
-
 workflows:
   version: 2
-  build_and_scan:
+  build-on-pr:
     jobs:
-      - build:
-          filters:
-            branches:
-              ignore: /.*/
-      - semgrep:
-          requires:
-            - build
-          filters:
-            branches:
-              only: master
-            pull_request:
-              only: /.*/
+      - semgrep
+    triggers:
+      - pull_request:
+          types: [opened, reopened]
