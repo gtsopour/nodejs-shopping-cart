@@ -20,9 +20,10 @@ jobs:
             CIRCLE_PULL_REQUEST: $CI_PULL_REQUEST
 workflows:
   version: 2
-  build-on-pr:
+  build:
     jobs:
-      - semgrep
-    triggers:
-      - pull_request:
-          types: [opened, reopened]
+      - semgrep:
+          filters:
+            branches:
+              only:
+                - master
